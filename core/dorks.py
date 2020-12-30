@@ -22,4 +22,4 @@ OPEN_REDIRECT_DORKS = ['next',
                        'ReturnUrl',
                        'checkout_url',
                        'continue',
-                       'return_path']
+                       'return_path',]
