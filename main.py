@@ -12,9 +12,9 @@ __author__ = 'Demetrius Ford'
               required=True)
 @click.option('--cookie',
               default=None)
-def cli(url, cookie):
+def main(url, cookie):
     """Test for open redirect."""
 
 
 if __name__ == '__main__':
-    cli()
+    main()
