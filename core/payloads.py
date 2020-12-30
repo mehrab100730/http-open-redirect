@@ -12,4 +12,4 @@ OPEN_REDIRECT_PAYLOADS = ['hackerone.com',
                           '%2f$2fhackerone.com',
                           '%2fhackerone.com%2f%2f',
                           '$2f%2fhackerone.com%2f%2f',
-                          '%2fhackerone.com//']
+                          '%2fhackerone.com//',]
