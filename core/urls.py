@@ -2,7 +2,7 @@ import re
 import urllib.parse
 
 from typing import Iterator
-from typing import Typle
+from typing import Tuple
 from typing import TypeVar
 
 from core.dorks import OPEN_REDIRECT_DORKS
