@@ -7,7 +7,7 @@ from core.dorks import OPEN_REDIRECT_DORKS
 from core.payloads import OPEN_REDIRECT_PAYLOADS
 
 
-def make_urls(url: str) -> Iterator[str]:
+def create_urls(url: str) -> Iterator[str]:
     if url[-1] == '/':
         url = url[:-1]
 
