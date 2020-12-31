@@ -11,8 +11,8 @@ def validate_url(ctx: Context, param: Option, value: str):
         raise BadParameter('url is not valid.')
     return value
 
-# => Credit sqlmap-dev (@sqlmapproject)
-# => https://github.com/sqlmapproject/sqlmap/blob/210a4c3a0a5dcaf984576e0597a79eb23fa9afa4/extra/vulnserver/vulnserver.py#L117-L122
+# Credit sqlmap-dev (@sqlmapproject)
+# https://github.com/sqlmapproject/sqlmap/blob/210a4c3a0a5dcaf984576e0597a79eb23fa9afa4/extra/vulnserver/vulnserver.py#L117-L122
 
 
 def convert_cookie(cookie: str):
