@@ -1,5 +1,7 @@
 # install
 
+**Note**: tested on Python 3.8.6
+
 ```shell
 $ git clone https://github.com/demetriusx00/http-open-redirect.git
 $ cd http-open-redirect/ && pip3 install -r requirements.txt
