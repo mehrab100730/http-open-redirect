@@ -8,11 +8,11 @@ from aiohttp import TCPConnector
 from core.urls import create_urls
 from core.utils import convert_cookie
 
-# => Target redirect
+# Target redirect
 
 HACKER_ONE = 'https://www.hackerone.com'
 
-# => Known redirects
+# Known redirects
 
 HTTP_CODES = (301,
               302,
