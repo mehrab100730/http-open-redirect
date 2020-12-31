@@ -3,8 +3,8 @@ import urllib.parse
 
 from typing import Iterator
 
-from core.dorks import OPEN_REDIRECT_DORKS
-from core.payloads import OPEN_REDIRECT_PAYLOADS
+from db.dorks import OPEN_REDIRECT_DORKS
+from db.payloads import OPEN_REDIRECT_PAYLOADS
 
 
 def create_urls(url: str) -> Iterator[str]:
