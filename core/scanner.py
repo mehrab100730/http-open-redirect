@@ -5,7 +5,7 @@ import urllib.parse
 from aiohttp import ClientSession
 from aiohttp import TCPConnector
 
-from core.urls import make_urls
+from core.urls import create_urls
 from core.utils import convert_cookie
 
 # => Target redirect
@@ -24,7 +24,7 @@ HTTP_CODES = (301,
 async def scan(url: str, cookie: str, workers: int):
     async with ClientSession(connector=TCPConnector(limit=0),
                              cookies=convert_cookie(cookie)) as session:
-        async def find_open_redirect(url):
+        async def analyze_redirect(url):
             async with session.get(url, allow_redirects=True) as response:
                 redirected = any(redirect.status in HTTP_CODES for
                                  redirect in response.history)
@@ -32,7 +32,6 @@ async def scan(url: str, cookie: str, workers: int):
                     response.url.human_repr() == HACKER_ONE
                 if vulnerable:
                     click.echo(f'😈 {urllib.parse.unquote_plus(url)}')
-
-        await pl.task.each(find_open_redirect,
-                           make_urls(url),
+        await pl.task.each(analyze_redirect,
+                           create_urls(url),
                            workers=workers)
