@@ -17,12 +17,12 @@ __author__ = 'Demetrius Ford'
               default=None)
 @click.option('--workers',
               default=multiprocessing.cpu_count())
-def main(url, cookie, workers):
+def main(url: str, cookie: str, workers: int):
     """Test for open redirect."""
     started = time.perf_counter()
     asyncio.run(scan(url, cookie, workers))
     elapsed = time.perf_counter() - started
-    
+
     click.echo(f'🎉 completed in {elapsed:0.2f} seconds.')
 
 
