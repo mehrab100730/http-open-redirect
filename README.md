@@ -16,14 +16,4 @@ $ python3 main.py --url="http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=
                   --cookie="PHPSESSID=EXAMPLE; security_level=0"
 ```
 
-```shell
-
-🔎 Open Redirect Scanner {v1.0-beta}
-   By Demetrius Ford (@demetriusx00)
-
-😈 http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=https://hackerone.com
-😈 http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=http://hackerone.com
-😈 http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=//hackerone.com
-😈 http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=////hackerone.com
-🎉 completed in 0.88 seconds.
-```
+![example](https://i.ibb.co/WkGJZVZ/example.png)
