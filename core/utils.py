@@ -25,3 +25,4 @@ def convert_cookie(cookie: str):
         if '=' in token:
             key, value = token.split('=', 1)
             cookie_dict[key.strip()] = urllib.parse.unquote_plus(value.strip())
+    return cookie_dict
