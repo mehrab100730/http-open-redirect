@@ -10,7 +10,7 @@ from core.utils import convert_cookie
 
 # Target redirect
 
-HACKER_ONE = 'https://www.hackerone.com'
+HACKER_ONE = 'https://www.hackerone.com/'
 
 # Known redirects
 
@@ -20,10 +20,13 @@ HTTP_CODES = (301,
               307,
               308)
 
+USER_AGENT = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'}
+
 
 async def scan(url: str, cookie: str, workers: int):
     async with ClientSession(connector=TCPConnector(limit=0),
-                             cookies=convert_cookie(cookie)) as session:
+                             cookies=convert_cookie(cookie),
+                             headers=USER_AGENT) as session:
         async def analyze_redirect(url):
             async with session.get(url, allow_redirects=True) as response:
                 redirected = any(redirect.status in HTTP_CODES for
