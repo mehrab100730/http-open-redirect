@@ -1,4 +1,4 @@
 pretty:
-        find . -name '*.py' -exec autopep8 --verbose --in-place --aggressive {} \;
+	find . -name '*.py' -exec autopep8 --verbose --in-place --aggressive {} \;
 secure:
-        bandit --verbose --recursive core/*.py main.py
+	bandit --verbose --recursive core/*.py main.py
