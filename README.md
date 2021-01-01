@@ -16,4 +16,4 @@ $ python3 main.py --url="http://localhost/unvalidated_redir_fwd_2.php?ReturnUrl=
                   --cookie="PHPSESSID=EXAMPLE; security_level=0"
 ```
 
-![example](https://i.ibb.co/WkGJZVZ/example.png)
+![example](https://i.ibb.co/VMj6tx5/example.png)
