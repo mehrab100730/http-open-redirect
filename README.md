@@ -1,3 +1,15 @@
+# http open redirect
+
+This tool can help you identify endpoints vulnerable to open redirects. <br />
+Your main objective should be to escalate severity by chaining attacks.
+
+What do you mean?
+
+> Can you hijack an OAuth Token?  
+> Can you invoke an interal service request? (SSRF)  
+> Can you modify HTTP responses? (CRLF)  
+> Can you invoke arbitrary JavaScript? (XSS)  
+
 # install
 
 **Note**: tested on Python 3.8.6
