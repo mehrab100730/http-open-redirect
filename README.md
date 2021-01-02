@@ -6,7 +6,7 @@ Your main objective should be to escalate severity by chaining attacks.
 What do you mean?
 
 > Can you hijack an OAuth Token?  
-> Can you invoke an interal service request? (SSRF)  
+> Can you invoke an internal service request? (SSRF)  
 > Can you modify HTTP responses? (CRLF)  
 > Can you invoke arbitrary JavaScript? (XSS)  
 
